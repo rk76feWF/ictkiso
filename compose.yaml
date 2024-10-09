@@ -1,0 +1,15 @@
+version: '3'
+services:
+  bind9:
+    image: ubuntu/bind9:latest
+    container_name: bind9-container
+    restart: unless-stopped
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    environment:
+      - BIND9_USER=bind
+      - TZ=UTC
+    volumes:
+      - ./bind/config:/etc/bind
+      - ./bind/records:/var/lib/bind
