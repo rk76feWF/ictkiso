@@ -1,0 +1,16 @@
+$ORIGIN     ictkiso.internal.
+$TTL        120
+
+@           IN      SOA     ns      noc     (
+    2024100901      ; SERIAL
+    10800           ; REFRESH
+    3600            ; RETRY
+    604800          ; EXPIRE
+    120             ; MINIMUM
+)
+
+            IN      NS      ns
+ns          IN      A       192.168.2.100
+
+@           IN      A       192.168.2.100
+www         IN      A       192.168.2.100
