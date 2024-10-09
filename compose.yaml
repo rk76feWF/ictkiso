@@ -9,7 +9,7 @@ services:
       - "53:53/tcp"
     environment:
       - BIND9_USER=bind
-      - TZ=UTC
+      - TZ=Asia/Tokyo
     volumes:
       - ./bind/config:/etc/bind
       - ./bind/records:/var/lib/bind
