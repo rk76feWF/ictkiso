@@ -10,7 +10,7 @@ services:
       - NGINX_HOST=www.ictkiso.internal
       - NGINX_PORT=80
     volumes:
-      - ~/www:/usr/share/nginx/html/
+      - ./www:/usr/share/nginx/html/
 
   bind9:
     image: ubuntu/bind9:latest
