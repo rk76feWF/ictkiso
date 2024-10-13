@@ -1,7 +1,7 @@
 $ORIGIN     ictkiso.internal.
 $TTL        120     ; 2 minutes
 
-@           IN      SOA     ns      noc     (
+@                   IN      SOA     ns      noc     (
     2024101001      ; serial
     3600            ; refresh (1 hour)
     1200            ; retry (20 minutes)
@@ -9,8 +9,8 @@ $TTL        120     ; 2 minutes
     120             ; minimum (2 minutes)
 )
 
-@           IN      NS      ns
-ns          IN      A       192.168.2.100
+@                   IN      NS      ns
+ns                  IN      A       192.168.2.100
 
-@           IN      A       192.168.2.100
-www         IN      A       192.168.2.100
+@                   IN      A       192.168.2.100
+www                 IN      A       192.168.2.100
